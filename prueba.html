@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200 font-lato">
+
+<!-- Navbar -->
+<div class="bg-black text-center p-4 text-gray-200">
+  <div class="flex items-center justify-between px-6">
+    <a><i class="fa fa-bars text-xl"></i></a>
+    <a href="#" class="hover:text-gray-400">HOME</a>
+    <a href="#band" class="hover:text-gray-400">BAND</a>
+    <a href="#tour" class="hover:text-gray-400">TOUR</a>
+    <a href="#contact" class="hover:text-gray-400">CONTACT</a>
+    <div class="relative group">
+      <button class="hover:text-gray-400">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="hidden group-hover:block bg-gray-700 text-gray-200 p-2 space-y-2 absolute top-full mt-2">
+        <a href="#" class="block hover:text-gray-400">Merchandise</a>
+        <a href="#" class="block hover:text-gray-400">Extras</a>
+        <a href="#" class="block hover:text-gray-400">Media</a>
+      </div>
+    </div>
+    <a><i class="fa fa-search text-xl hover:text-gray-400"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="bg-slate-600 flex items-center justify-around p-2 md:hidden">
+  <a href="#band" class="hover:text-gray-400">BAND</a>
+  <a href="#tour" class="hover:text-gray-400">TOUR</a>
+  <a href="#contact" class="hover:text-gray-400">CONTACT</a>
+  <a href="#" class="hover:text-gray-400">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="bg-slate-600">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="relative">
+    <img src="img/LA.jpg" class="w-full">
+    <div class="absolute bottom-0 bg-black bg-opacity-75 text-white p-4 w-full text-center">
+      <h3 class="text-xl font-semibold">Los Angeles</h3>
+      <p>We had the best time playing at Venice Beach!</p>   
+    </div>
+  </div>
+  <div class="relative">
+    <img src="img/NY.jpg" class="w-full">
+    <div class="absolute bottom-0 bg-black bg-opacity-75 text-white p-4 w-full text-center">
+      <h3 class="text-xl font-semibold">New York</h3>
+      <p>The atmosphere in New York is lorem ipsum.</p>    
+    </div>
+  </div>
+  <div class="relative">
+    <img src="img/Chicago.jpg" class="w-full">
+    <div class="absolute bottom-0 bg-black bg-opacity-75 text-white p-4 w-full text-center">
+      <h3 class="text-xl font-semibold">Chicago</h3>
+      <p>Thank you, Chicago - A night we won't forget.</p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div id="band" class="p-8 text-center">
+    <h2 class="text-4xl font-bold">THE BAND</h2>
+    <p class="italic mb-6">We love music</p>
+    <p class="text-gray-300 mb-6">We have created a fictional band website...</p>
+    <div class="flex justify-around">
+      <div class="text-center">
+        <p class="font-semibold">Name</p>
+        <img src="img/Gervonta.jpg" alt="Random Name" class="rounded-full w-32 h-32 mx-auto">
+      </div>
+      <div class="text-center">
+        <p class="font-semibold">Name</p>
+        <img src="img/dandy.jpg" alt="Random Name" class="rounded-full w-32 h-32 mx-auto">
+      </div>
+      <div class="text-center">
+        <p class="font-semibold">Name</p>
+        <img src="img/Tyson.jpg" alt="Random Name" class="rounded-full w-32 h-32 mx-auto">
+      </div>
+    </div>
+  </div>
+
+  <!-- The Tour Section -->
+  <div id="tour" class="p-8 text-center">
+    <h2 class="text-4xl font-bold">TOUR DATES</h2>
+    <p class="italic mb-6">Remember to book your tickets!</p>
+    <ul class="space-y-2 mb-8">
+      <li class="flex justify-between border-b border-gray-500 p-2">September <span>Sold out</span></li>
+      <li class="flex justify-between border-b border-gray-500 p-2">October <span>Sold out</span></li>
+      <li class="flex justify-between border-b border-gray-500 p-2">November <span>3</span></li>
+    </ul>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-gray-700 text-white p-4 rounded">
+        <img src="https://picsum.photos/500/500" alt="New York" class="w-full h-48 object-cover rounded-t">
+        <div class="mt-4">
+          <p class="font-bold">New York</p>
+          <p>Fri 27 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button class="mt-2 px-4 py-2 bg-blue-500 rounded">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="bg-gray-700 text-white p-4 rounded">
+        <img src="https://picsum.photos/500/500" alt="Paris" class="w-full h-48 object-cover rounded-t">
+        <div class="mt-4">
+          <p class="font-bold">Paris</p>
+          <p>Sat 28 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button class="mt-2 px-4 py-2 bg-blue-500 rounded">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="bg-gray-700 text-white p-4 rounded">
+        <img src="https://picsum.photos/500/500" alt="San Francisco" class="w-full h-48 object-cover rounded-t">
+        <div class="mt-4">
+          <p class="font-bold">San Francisco</p>
+          <p>Sun 29 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button class="mt-2 px-4 py-2 bg-blue-500 rounded">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <!-- The Contact Section -->
+  <div id="contact" class="p-8 text-center">
+    <h2 class="text-4xl font-bold">CONTACT</h2>
+    <p class="italic mb-6">Fan? Drop a note!</p>
+    <div class="flex justify-center space-x-8">
+      <input type="text" placeholder="Name" class="bg-gray-700 p-2 rounded">
+      <input type="text" placeholder="Email" class="bg-gray-700 p-2 rounded">
+    </div>
+    <textarea placeholder="Message" class="w-full bg-gray-700 p-2 mt-4 rounded"></textarea>
+    <button class="mt-4 px-4 py-2 bg-blue-500 rounded">SEND</button>
+  </div>
+</div>
+
+</body>
+</html>
